@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: self-harold1990
+  api_key: '846711894135785'
+  api_secret: oxW5cW7UshFyyKPrfRx5Y-bNfcA
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: self-harold1990
+  api_key: '846711894135785'
+  api_secret: oxW5cW7UshFyyKPrfRx5Y-bNfcA
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: self-harold1990
+  api_key: '846711894135785'
+  api_secret: oxW5cW7UshFyyKPrfRx5Y-bNfcA
+  enhance_image_tag: true
+  static_file_support: false

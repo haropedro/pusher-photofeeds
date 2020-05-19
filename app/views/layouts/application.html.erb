@@ -7,11 +7,26 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+
+    <script>
+      var pusher = new Pusher('PUSHER_APP_KEY', {
+      cluster: 'eu',
+      encrypted: true
+    });
+    </script>
+
   </head>
 
   <body>
     <%= link_to 'Home', root_path %>
     <%= link_to 'About', about_path %>
+    <%= link_to 'Index', photo_path %>
+    <% flash.each do |name, msg| %>
+      <ul>
+        <li><%= msg %></li>
+      </ul>
+    <% end %>
     <%= yield %>
   </body>
 </html>

@@ -32,6 +32,11 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
+# adding cloudinary to gemfile
+gem 'cloudinary'
+gem 'pusher'
+gem 'dotenv-rails'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
