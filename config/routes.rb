@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   post 'photo/store'
   get 'photo', to: 'photo#index'
   resources :articles
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 
 end
